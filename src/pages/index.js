@@ -79,6 +79,7 @@ const IndexPage = () => {
           🎉🎉🎉
         </span>
       </h1>
+      
       <button className="snipcart-add-item"
         data-item-id="starry-night"
         data-item-price="79.99"
