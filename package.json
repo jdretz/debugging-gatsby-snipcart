@@ -16,6 +16,7 @@
   },
   "license": "0BSD",
   "dependencies": {
+    "@jarrettretz/library": "^1.4.4",
     "gatsby": "^2.26.1",
     "gatsby-plugin-postcss": "^3.3.0",
     "gatsby-source-sanity": "^6.0.4",
