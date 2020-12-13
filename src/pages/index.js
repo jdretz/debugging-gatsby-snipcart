@@ -79,6 +79,15 @@ const IndexPage = () => {
           🎉🎉🎉
         </span>
       </h1>
+      <button className="snipcart-add-item"
+        data-item-id="starry-night"
+        data-item-price="79.99"
+        data-item-url="/"
+        data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+        data-item-image="https://cdn.sanity.io/images/ah76eszu/production_2/61ba109db41e00ce5d6afa8f8bdfd9db9b413641-720x405.png?w=720&h=250&fit=crop&fm=webp"
+        data-item-name="The Starry Night">
+        Add to cart
+      </button>
       <p style={paragraphStyles}>
         Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
         update in real-time.{" "}
@@ -87,8 +96,8 @@ const IndexPage = () => {
         </span>
       </p>
       <ul style={listStyles}>
-        {links.map(link => (
-          <li style={listItemStyles}>
+        {links.map((link, i) => (
+          <li key={i} style={listItemStyles}>
             <a
               style={linkStyles}
               href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
