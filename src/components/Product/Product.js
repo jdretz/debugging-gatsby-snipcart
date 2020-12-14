@@ -1,7 +1,4 @@
 import React from "react";
-import {
-    Card
-} from "@jarrettretz/library";
 // import BlockContent from "@sanity/block-content-to-react";
 // import serializers from "../../../utils/serializers";
 // import Image from "gatsby-image";
@@ -121,14 +118,8 @@ const Product = ({ product }) => {
                 {/* TODO: Link arrows to product variants  */}
                 {hotProduct && <>
                     <div className={hasVariants ? `col-lg-8` : `col-lg-12`}>
-                        <Card
-                            heading={<h3 className="text-center">{!hotProduct.title ? product.title : hotProduct.title}</h3>}
-                            image={<img src={hotProduct.mainImage.asset.fluid.src} />}
-                            cardStyle={{
-                                alignItems: "flex-start",
-                                margin: "auto"
-                            }}
-                        >
+                    <h3 className="text-center">{!hotProduct.title ? product.title : hotProduct.title}</h3>
+                    <img src={hotProduct.mainImage.asset.fluid.src} />
                             {hasVariants ?
                                 /**
                                  * 
@@ -208,7 +199,6 @@ const Product = ({ product }) => {
                                     } */}
                                 </>
                             }
-                        </Card>
                     </div>
                     {/* {hasVariants ?
                         <div className="col-lg-4">
