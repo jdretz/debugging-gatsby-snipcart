@@ -1,0 +1,10 @@
+.ResetButton {
+    margin: 1rem;
+}
+
+.ProductRow {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-top: 2px solid var(--highlight-color);
+        border-bottom: 2px solid var(--highlight-color);
+}
